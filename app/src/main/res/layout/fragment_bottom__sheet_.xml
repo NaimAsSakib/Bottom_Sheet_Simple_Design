@@ -153,7 +153,7 @@
         android:layout_height="wrap_content"
         android:text="Proceed to pay"
         app:layout_constraintTop_toBottomOf="@id/tvTotal2"
-        android:layout_margin="25dp"/>
+        android:layout_margin="15dp"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
