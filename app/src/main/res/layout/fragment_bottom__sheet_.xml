@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".Bottom_Sheet_Fragment">
+
+    <TextView
+        android:id="@+id/order"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Order details"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivPizza"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/pizza"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/order" />
+
+    <TextView
+        android:id="@+id/pizzaTV1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="Pizza"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@id/pizzaTV2"
+        app:layout_constraintStart_toEndOf="@id/ivPizza"
+        app:layout_constraintTop_toTopOf="@id/ivPizza" />
+
+  <TextView
+      android:id="@+id/pizzaTV2"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="16dp"
+      android:text="* 1"
+      app:layout_constraintBottom_toBottomOf="@id/ivPizza"
+      app:layout_constraintStart_toEndOf="@id/ivPizza"
+      app:layout_constraintTop_toBottomOf="@id/pizzaTV1" />
+
+  <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="$ 12"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/pizzaTV2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/pizzaTV1" />
+
+
+
+  <ImageView
+      android:id="@+id/ivFFries"
+      android:layout_width="150dp"
+      android:layout_height="150dp"
+      android:layout_marginTop="10dp"
+      android:src="@drawable/french_fries"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/ivPizza" />
+
+
+
+  <LinearLayout
+      android:id="@+id/lLayout"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:orientation="vertical"
+      app:layout_constraintEnd_toStartOf="@id/priceFFries"
+      app:layout_constraintTop_toTopOf="@id/ivFFries"
+      app:layout_constraintBottom_toBottomOf="@id/ivFFries"
+      app:layout_constraintStart_toEndOf="@id/ivFFries"
+      >
+    <TextView
+        android:id="@+id/fFriesTV1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:text="French Fries French Fries"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@id/fFriesTV2"
+        app:layout_constraintStart_toEndOf="@id/ivFFries"
+        app:layout_constraintTop_toTopOf="@id/ivFFries" />
+    <TextView
+        android:id="@+id/fFriesTV2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="* 3"
+        app:layout_constraintBottom_toBottomOf="@id/ivFFries"
+        app:layout_constraintStart_toEndOf="@id/ivFFries"
+        app:layout_constraintTop_toBottomOf="@id/fFriesTV1" />
+
+  </LinearLayout>
+
+
+  <TextView
+      android:id="@+id/priceFFries"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="$ 9"
+      android:textColor="@color/black"
+      android:textSize="20sp"
+      android:textStyle="bold"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintTop_toTopOf="@id/lLayout"
+      app:layout_constraintBottom_toBottomOf="@id/lLayout"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
