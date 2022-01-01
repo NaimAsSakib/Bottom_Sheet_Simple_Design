@@ -71,8 +71,6 @@
       app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintTop_toBottomOf="@id/ivPizza" />
 
-
-
   <LinearLayout
       android:id="@+id/lLayout"
       android:layout_width="0dp"
@@ -105,9 +103,7 @@
         app:layout_constraintBottom_toBottomOf="@id/ivFFries"
         app:layout_constraintStart_toEndOf="@id/ivFFries"
         app:layout_constraintTop_toBottomOf="@id/fFriesTV1" />
-
   </LinearLayout>
-
 
   <TextView
       android:id="@+id/priceFFries"
@@ -120,5 +116,44 @@
       app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintTop_toTopOf="@id/lLayout"
       app:layout_constraintBottom_toBottomOf="@id/lLayout"/>
+
+
+    <TextView
+        android:id="@+id/tvTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="45dp"
+        app:layout_constraintTop_toBottomOf="@id/ivFFries"
+        app:layout_constraintStart_toStartOf="parent"   />
+    <TextView
+        android:id="@+id/tvTotal2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="45dp"
+        android:text="(with packaging charge)"
+        app:layout_constraintTop_toBottomOf="@id/tvTotal"
+        app:layout_constraintStart_toStartOf="parent"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="$ 21"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tvTotal"
+        app:layout_constraintBottom_toBottomOf="@id/tvTotal2"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Proceed to pay"
+        app:layout_constraintTop_toBottomOf="@id/tvTotal2"
+        android:layout_margin="25dp"/>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
