@@ -139,6 +139,7 @@
         app:layout_constraintTop_toBottomOf="@id/tvTotal"
         app:layout_constraintStart_toStartOf="parent"/>
     <TextView
+        android:id="@+id/tvPriceTotal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="$ 21"
@@ -153,7 +154,9 @@
         android:layout_height="wrap_content"
         android:text="Proceed to pay"
         app:layout_constraintTop_toBottomOf="@id/tvTotal2"
-        android:layout_margin="15dp"/>
+        app:layout_constraintStart_toStartOf="@id/tvTotal"
+        app:layout_constraintEnd_toEndOf="@id/tvPriceTotal"
+        android:layout_marginTop="25dp"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
